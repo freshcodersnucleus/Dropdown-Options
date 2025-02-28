@@ -267,8 +267,7 @@ app.get("/", function (req, res) {
 })
 
 app.get("/options", function (req, res) {
-    res.status(200).json({"options": ["First API option", "Second API option", "Third API option"]})cd/
-    cd 
+    res.status(200).json({"options": ["First API option", "Second API option", "Third API option"]})
 })
 
 app.get("/getCountriesList", async function (req, res) {
