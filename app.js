@@ -278,7 +278,7 @@ app.get("/getCompaniesList", async function (req, res) {
     res.status(200).json({ companies: companiesList });
 })
 
-app.get("/getAdhaarDetails", function (req, res) {
+app.post("/getAdhaarDetails", function (req, res) {
     res.set('Access-Control-Allow-Origin', '*');
     res.status(200).json({"name": "Piyush Khanna", "age": 22});
 })
