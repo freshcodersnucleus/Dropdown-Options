@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
+const cors= require('cors')
 
+app.use(cors())
 countriesList= [
     "Afghanistan",
     "Åland Islands",
@@ -265,7 +267,8 @@ app.get("/", function (req, res) {
 })
 
 app.get("/options", function (req, res) {
-    res.status(200).json({"options": ["First API option", "Second API option", "Third API option"]})
+    res.status(200).json({"options": ["First API option", "Second API option", "Third API option"]})cd/
+    cd 
 })
 
 app.get("/getCountriesList", async function (req, res) {
