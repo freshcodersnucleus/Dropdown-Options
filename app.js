@@ -275,3 +275,7 @@ app.get("/getCountriesList", async function (req, res) {
 app.get("/getCompaniesList", async function (req, res) {
     res.status(200).json({ companies: companiesList });
 })
+
+app.get("/getAdhaarDetails", function (req, res) {
+    res.status(200).json({"name": "Piyush Khanna", "age": 22});
+})
