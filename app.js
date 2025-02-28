@@ -254,6 +254,8 @@ countriesList= [
     "Zimbabwe"
   ]
 
+companiesList= ["Nucleus Software", "HDFC", "ICICI", "Muthoot"]
+
 app.listen(3030, function (req, res) {
     console.log("Server up and running on port 3030");
 })
@@ -268,4 +270,8 @@ app.get("/options", function (req, res) {
 
 app.get("/getCountriesList", async function (req, res) {
     res.status(200).json({ countries: countriesList });
+})
+
+app.get("/getCompaniesList", async function (req, res) {
+    res.status(200).json({ companies: companiesList });
 })
